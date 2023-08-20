@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <section>
+    <img class="background-image" src="bg.avif" alt="">
+    <div class="odin-background">
+      <img class="odin" src="odin-lined.png" alt="">
+      <p>ODIN</p>
+    </div>
+    <p>Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+  </section>
+  <main>
+    <div>
+
+    </div>
+    <div class="form-container">
+      <h1>Let's do this!</h1>
+      <form  action="" method="post" id="form">
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" id="first-name" name="first-name" required
+        placeholder=" " maxlength="30" pattern="^(?!\s+$).+">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required
+        placeholder=" " maxlength="30">
+        <label class="error" for="password">PASSWORD<p id="message" style="color: red;"></p></label>
+        <input class="error" type="password" id="password" name="password" required
+        placeholder=" " minlength="8" maxlength="40" pattern="^\S+$">
+        
+        <label for="last-name">LAST NAME</label>
+        <input type="text" id="last-name" name="last-name" required
+        placeholder=" " maxlength="30" pattern="^(?!\s+$).+">
+        <label for="number">PHONE NUMBER</label>
+        <input type="tel" id="number" name="number"
+        placeholder=" " minlength="7" maxlength="18" pattern="^(?!\s+$).+">
+        <label for="password-repeat">CONFIRM PASSWORD</label>
+        <input class="error" type="password" id="password-confirm" name="password-confirm" required
+        placeholder=" " minlength="8" maxlength="40" pattern="^\S+$">
+        <script>
+          const password1 = document.getElementById("password");
+          const password2 = document.getElementById("password-confirm");
+          const message = document.getElementById("message");
+
+          // Function to check if passwords match in real-time
+          function checkPasswords() {
+            if (password1.value !== password2.value) {
+              password1.setCustomValidity("Passwords do not match");
+              password2.setCustomValidity("Passwords do not match");
+              message.textContent = "Passwords do not match";
+            } else {
+              password1.setCustomValidity("");
+              password2.setCustomValidity("");
+              message.textContent = "";
+            }
+          }
+
+          password1.addEventListener("input", checkPasswords);
+          password2.addEventListener("input", checkPasswords);
+        </script>
+      </form>
+    </div>
+    <div>
+      <button type="submit" form="form" value="Submit">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </main>
+</body>
+</html>
