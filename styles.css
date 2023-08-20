@@ -19,11 +19,11 @@ section {
 
 section>p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
+  font-size:calc(0.3em + 1vh);
   position: absolute;
   bottom: 1vh;
   margin: 0;
-  color: rgba(255, 255, 255, 0.603);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
 }
 
@@ -45,7 +45,8 @@ section>p {
 section>div>p {
   color: white;
   font-family: Norse;
-  font-size: 5em;
+  font-size:calc(1em + 10vh);
+  margin: 1vw;
 }
 
 a {
@@ -105,6 +106,7 @@ form {
 }
 
 input {
+  font-size:calc(0.2em + 2vh);
   object-fit: contain;
   flex: none;
   margin: 0 3vw 2vh 3vw;
