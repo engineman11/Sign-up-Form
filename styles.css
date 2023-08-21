@@ -82,14 +82,14 @@ main>div {
   width: inherit;
   box-shadow: inset;
   /* padding: 3em; */
-  justify-content: space-around;
+  justify-content: start;
   flex-direction: column;
 }
 
 h1 {
   height: 2vh;
   padding: 0;
-  margin: 2vh 0 0 3vw ;
+  margin: 4vh 3vw ;
   font-size:calc(8px + 2.5vh);
 }
 
@@ -97,9 +97,9 @@ form {
   display: flex;
   flex-direction: column;
   width: min(40vw, 90em);
-  height: 35vh;
+  height: 36vh;
   margin: 0;
-  padding: 0;
+  padding: 1vh 0;
   flex-wrap: wrap;
   justify-content: start;
 
@@ -183,9 +183,6 @@ input:placeholder-shown, input:placeholder-shown:not(:valid) {
 
 input:focus:not(:valid), input:focus:placeholder-shown, button:focus, a:focus {
   outline: 1px solid blue;
-  box-shadow:
-  2px 2px 5px rgba(0, 0, 0, 0.5);
-  /* border: 1px solid blue; */
 }
 
 #message {
@@ -194,4 +191,8 @@ input:focus:not(:valid), input:focus:placeholder-shown, button:focus, a:focus {
   font-size:calc(0.2em + 1.5vh);
   position: relative;
   top: 7vh;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
