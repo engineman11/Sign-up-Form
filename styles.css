@@ -106,13 +106,14 @@ form {
 }
 
 input {
-  font-size:calc(0.2em + 2vh);
+  font-size:calc(0.2rem + 1.5vh);
   object-fit: contain;
   flex: none;
   margin: 0 3vw 2vh 3vw;
+  padding: 0 1vh;
   height: 4vh;
   width: min(35em, 15vw);
-  border-radius: 1vh;
+  border-radius: 1.5vh;
   border: 1px solid #d1d1d1;
   /* box-shadow: inset 0px 1px 8px rgba(0, 0, 0,); */
 }
@@ -137,12 +138,12 @@ button {
   border: 0px solid #d1d1d1;
   border-radius: 1vh;
   font-size:calc(0.2em + 1.8vh);
-}
 
-button:hover {
-  background-color: #26bb21;
-  color: white;
-  cursor: pointer;
+  &:hover {
+    background-color: #26bb21;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 a:hover {
@@ -182,7 +183,7 @@ input:placeholder-shown, input:placeholder-shown:not(:valid) {
 }
 
 input:focus:not(:valid), input:focus:placeholder-shown, button:focus, a:focus {
-  outline: 1px solid blue;
+  outline: 2px solid rgb(29, 108, 255);
 }
 
 #message {
