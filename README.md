@@ -1,3 +1,5 @@
-# **[Live Demo](https://engineman11.github.io/SignUpForm/)**
+## **[SignUpForm Live Demo](https://engineman11.github.io/SignUpForm/)**
 
-A form for learning to create a responsive Sign-up form using HTML, CSS and little JavaScript, optimized for desktop monitors.
+Simple Sign Up page. Not responsive with smartphone displays yet.
+
+Purpose: Learning to create a responsive Sign-up form using HTML, CSS and very little JavaScript
