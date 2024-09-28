@@ -137,9 +137,10 @@ label {
 button {
   font-weight: 600;
   width: 12vw;
-  height: 6vh;
+  height: 7vh;
   margin: 3vh 3vw;
-  background-color: rgb(15,121,12);
+  padding: 0 1.2vw;
+  background-color: rgb(5, 151, 0);
   color: white;
   border: 0px solid #d1d1d1;
   border-radius: 1.5vh;
@@ -173,7 +174,7 @@ main>div>p {
 main div a {
 text-decoration: none;
 font-weight: 600;
-color: rgb(15, 121, 12)
+color:  rgb(5, 151, 0);
 }
 
 input:not(:focus):invalid {
